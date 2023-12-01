@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 390px;
+    min-height: 844px;
+    background: #451B8A;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    margin-left: 105px;
+    margin-right: 105px;
+}
+
+.name {
+    position: absolute;
+    top: 50%;
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.name-songs {
+    left: 0%;
+    animation-name: slideInLeft;
+    color: #FFF;
+
+    font-family: Cabin;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.name-diagram {
+    right: 0%;
+    animation-name: slideInRight;
+}
+
+@keyframes slideInLeft {
+    to {
+        left: 43%;
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes slideInRight {
+    to {
+        right: 28%;
+        transform: translateY(-20%);
+    }
+}
+

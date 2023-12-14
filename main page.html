@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Main page</title>
+    <link rel="stylesheet" href="./styles/main page.css">
+    <link rel="shortcut icon" href="./photo/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <section class="container">
+        <section class="header">
+            <a href="#popup" class="tab">
+                <div class="line_button">
+                    <div class="lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </a>
+            <a href="./main page.html" class="logo">
+                <h2 class="songs">
+                    +Songs
+                </h2>
+                <svg class="diagram" xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32"
+                    fill="none">
+                    <path d="M35.5909 16H29.0662L24.1727 30L14.3857 2L9.4922 16H2.96753" stroke="#6100FF"
+                        stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+            <a href="./profile.html" class="profile_button">
+                <div class="profile">
+                    <img class="user-img" src="./photo/Ellipse 1.png" alt="profile photo">
+                </div>
+            </a>
+        </section>
+        <section class="main">
+            <div class="search-container">
+                <input type="text" id="searchQuery" placeholder="Enter a request">
+                <button id="searchButton" onclick="searchMusic()">Search</button>
+            </div>
+            <div class="advice">
+                <h3 class="advice_text">
+                    For greater accuracy, indicate the artist of the song
+                </h3> 
+                <h3 class="advice_text">
+                    If you want to select artist's songs, just write the artist's name
+                </h3>
+            </div>
+            <div class="main_photo">
+                <img id="change_img" class="music_img" src="./photo/image 7.jpg" alt="music background">
+            </div>
+            <div class="music_name">
+                <p id="change_name" class="music"></p>
+            </div>
+            <div class="player-container">
+                <audio controls id="audioPlayer">
+                    Your browser does not support the audio tag.
+                </audio>
+                <div class="controls">
+                    <button onclick="playPause()">Play/Pause</button>
+                    <button onclick="addToFavorites()">Add to favourites</button>
+                </div>
+            </div>
+            <div class="music_list">
+                <p class="music" id="tracklist"></p>
+            </div>
+        </section>
+        <section class="popup">
+            <a href="#popup">
+                <div class="popup_button">
+                    <div class="array">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="23" viewBox="0 0 46 23" fill="none">
+                            <path
+                                d="M2 21.2843L19.6777 3.60663C21.6303 1.65401 24.7961 1.65401 26.7487 3.60663L44.4264 21.2843"
+                                stroke="white" stroke-width="4" />
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            <div id="popup" class="popup_block">
+                <a href="#popuphide">
+                    <div class="popup_button">
+                        <div class="array">
+                            <svg width="46" height="24" viewBox="0 0 46 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M44.4264 2.2132L26.7487 19.8909C24.7961 21.8435 21.6303 21.8435 19.6777 19.8909L1.99999 2.2132"
+                                    stroke="white" stroke-width="4" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <div class="popup_list">
+                    <a class="page_link" href="./main page.html">
+                        <p class="popup_pages">
+                            Search
+                        </p>
+                    </a>
+                    <div class="popup_line"></div>
+                    <a class="page_link" href="./profile.html">
+                        <p class="popup_pages">
+                            Profile
+                        </p>
+                    </a>
+                    <div class="popup_line"></div>
+                    <a class="page_link" href="./share.html">
+                        <p class="popup_pages">
+                            Our QR code for sharing with friends
+                        </p>
+                    </a>
+                    <div class="popup_line"></div>
+                    <div class="support">
+                        <h3 class="contact">
+                            In case of an error, please contact us plussongs.support@gmail.com
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>

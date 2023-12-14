@@ -1,0 +1,291 @@
+body {
+    margin: 0 auto;
+    overflow: hidden;
+    overflow: scroll;
+}
+
+a {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    max-width: 430px;
+    background: #000;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 73px;
+    padding: 22px 15px;
+    background: linear-gradient(180deg, #451B8A 0%, rgba(97, 0, 255, 0.00) 100%);
+}
+
+.logo {
+    text-decoration: none;
+    display: inline-flex;
+}
+
+.diagram {
+    margin-left: -15px;
+}
+
+.songs {
+    color: #FFF;
+    font-family: Cabin;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.profile_button {
+    display: inline-flex;
+}
+
+.profile {
+    padding-top: 5px;
+}
+
+.user-img {
+    border-radius: 54px;
+}
+
+.line_button {
+    display: flex;
+    padding-top: 15px;
+}
+
+.lines {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.line {
+    border: 2px solid;
+    color: #FF7715;
+    width: 35px;
+    border-radius: 25px;
+}
+
+.music_img {
+    max-width: 300px;
+    border-radius: 40px;
+    margin: 20px auto;
+}
+
+.main_photo {
+    display: flex;
+}
+
+.music_name {
+    display: flex;
+    justify-content: center;
+    margin: 0 30px 21px;
+}
+
+.music {
+    color: #FFF;
+    font-family: Cabin;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.advice {
+    display: flex;
+    justify-content: space-between;
+    margin: 21px 20px;
+    text-align: center;
+}
+
+.advice_text {
+    color: #FFF;
+    font-family: Cabin;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration:underline;
+}
+
+.player-container {
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.music_list {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin: 0 30px;
+}
+
+#tracklist {
+    list-style-type: none;
+    padding: 0;
+}
+
+#tracklist li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.support {
+    margin-top: 50px;
+}
+
+.contact {
+    display: flex;
+    text-align: center;
+    color: #FFF;
+    font-family: Cabin;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #6100FF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #FF7715;
+}
+
+input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 0 0;
+}
+
+.popup {
+    margin: 0px 15px 0;
+}
+
+.popup_button {
+    border-radius: 40px;
+    width: 328px;
+    height: 62px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #FF7715 0%, rgba(255, 119, 21, 0.00) 100%);
+}
+
+.popup_tab {
+    width: 30px;
+    height: 30px;
+    transform: rotate(-45deg);
+    flex-shrink: 0;
+    stroke-width: 4px;
+    background: #FFF;
+}
+
+.array {
+    display: flex;
+    justify-content: center;
+    margin: 21px auto;
+}
+
+.main {
+    position: relative;
+}
+
+#popup {
+    display: none;
+}
+
+#popup:target {
+    display: block;
+    border-radius: 40px;
+    background: #FF7715;
+    height: 500px;
+    z-index: 3;
+    margin-top: -500px;
+    position: relative;
+}
+
+#popuphide:target {
+    display: none;
+}
+
+.popup_list {
+    margin: 50px auto;
+}
+
+.popup_pages {
+    color: #FFF;
+    font-family: Cabin;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.page_link {
+    text-decoration: none;
+    justify-content: center;
+}
+
+.popup_pages:hover {
+    color: #6100FF;
+}
+
+.popup_line {
+    width: 240px;
+    height: 1px;
+    background: #FFF;
+    margin: 0 auto;
+}
+
+.music_list , .music_name {
+    text-align: center;
+}
+
+#audioPlayer::-webkit-media-controls-panel {
+    background-color: #FF7715; /* Цвет панели управления (для WebKit браузеров) */
+}
+
+#audioPlayer::-webkit-media-controls-current-time-display,
+#audioPlayer::-webkit-media-controls-time-remaining-display {
+    color: #fff; /* Цвет отображения текущего времени (для WebKit браузеров) */
+}
+
+#audioPlayer::-webkit-media-controls-mute-button,
+#audioPlayer::-webkit-media-controls-volume-slider {
+    color: #fff; /* Цвет элементов управления громкостью (для WebKit браузеров) */
+}

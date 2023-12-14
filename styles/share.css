@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background: #451B8A;
+    max-width: 430px;
+    height: 933px;
+    margin: 0 auto;
+}
+
+img {
+    width: 150px;
+    height: 200px;
+}
+
+.qr {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.title {
+    color: #FFF;
+    font-family: Cabin;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.qr_title {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.logo {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.diagram {
+    margin-left: -15px;
+}
+
+.songs {
+    color: #FFF;
+    font-family: Cabin;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}

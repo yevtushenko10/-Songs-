@@ -1,12 +1,13 @@
 body {
     margin: 0;
     overflow: hidden;
+    overflow: scroll;
 }
 
 .container {
     width: 100%;
-    max-width: 390px;
-    min-height: 844px;
+    max-width: 430px;
+    min-height: 934px;
     background: #451B8A;
     position: absolute;
     top: 50%;
@@ -57,8 +58,25 @@ body {
 
 @keyframes slideInRight {
     to {
-        right: 28%;
+        right: 30%;
         transform: translateY(-20%);
     }
 }
 
+.button {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 390px) {
+    .container {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    @keyframes slideInRight {
+        to {
+            right: 25%;
+            transform: translateY(-20%);
+        }
+    }
+}

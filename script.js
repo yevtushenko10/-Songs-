@@ -60,7 +60,7 @@ window.onload = async function () {
           method: 'GET',
           headers: {
               'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com',
-              'X-RapidAPI-Key': 'd2322adde1mshe948ebadaf36d3fp11b821jsn54b3f19d019e', // Замените на свой API-ключ
+              'X-RapidAPI-Key': 'API KEY', // Paste your API KEY here
           },
       });
   
